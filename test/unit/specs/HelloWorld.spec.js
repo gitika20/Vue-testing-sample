@@ -29,7 +29,7 @@ describe('HelloWorld', () => {
     //   const wrapper = mount(HelloWorld)
     //   const button = wrapper.find('button')
     //   expect(button.text()).toBe('submit')
-    // }),
+    // })
     it('button click should increment the count', () => {
       expect(wrapper.vm.count).toBe(0)
       const button = wrapper.find('button')
