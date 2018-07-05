@@ -1,4 +1,3 @@
-import Vue from 'vue'
 import Vuetify from 'vuetify'
 import HelloWorld from '@/components/HelloWorld'
 import { mount,createLocalVue } from '@vue/test-utils'
@@ -40,5 +39,8 @@ describe('HelloWorld', () => {
       const text = wrapper.vm.value
        wrapper.find('#text').trigger('value')
       expect(wrapper.find('#text').element.value).toBe(text)
-    })
+    }),
+     it('has a button', () => {
+    expect(wrapper.contains('#increment')).toBe(false)
+  })
 })
