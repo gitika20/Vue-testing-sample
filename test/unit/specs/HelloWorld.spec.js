@@ -41,6 +41,6 @@ describe('HelloWorld', () => {
       expect(wrapper.find('#text').element.value).toBe(text)
     }),
      it('has a button', () => {
-    expect(wrapper.contains('#increment')).toBe(false)
+    expect(wrapper.contains('#increment')).toBe(true)
   })
 })

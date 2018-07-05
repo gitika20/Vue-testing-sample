@@ -6,7 +6,6 @@
     <span class="count">{{count}}</span>
     <button @click="increment">increment</button>
     <input type="text" name="text" id="text" v-model="value">
-    <v-btn id="submit" :disabled="!valid">Submit</v-btn>
   </div>
 </template>
 
